@@ -1,0 +1,22 @@
+#loginpage{
+background-color: #FF7C23;
+height: 100vh;
+width: 95vw;
+border-radius: 55px;
+display: flex;
+}
+
+.sector{
+    width: 50%;
+    height: 100%;
+}
+
+#sector-left{
+}
+
+#sector-right{
+    border-radius: 55px;
+    z-index: 4;
+    background-color: white;
+    width: 55%;
+}
