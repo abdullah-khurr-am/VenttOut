@@ -1,7 +1,7 @@
 #loginpage{
 background-color: #FF7C23;
 height: 100vh;
-width: 95vw;
+width: 97vw;
 border-radius: 55px;
 display: flex;
 }
@@ -12,6 +12,9 @@ display: flex;
 }
 
 #sector-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #sector-right{
@@ -19,4 +22,31 @@ display: flex;
     z-index: 4;
     background-color: white;
     width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#belowbutton{
+    margin-top: 26px;
+    color: #616161;
+}
+
+#belowbutton a{
+    text-decoration: none;
+    color: #400CCE;
+}
+
+#punchline{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 56px;
+    color: white;
+    margin-top: 199px;
+}
+
+#Guy{
+    margin-left: 850px;
+    z-index: 10;
 }

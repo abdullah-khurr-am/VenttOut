@@ -1,15 +1,14 @@
-import "../styles/Button.css"
-// import google from ""
+import "../styles/Button.css";
 
-
-const Button = () => {
-    return ( 
+const Button = ({icontext,image}) => {
+  return (
     <div id="button">
-        <div id="button-content" >
-            <p>Sign In With Google</p>
-            {/* <img src={icon} alt="" width="20px" height="20px"/> */}
-        </div>
-    </div> );
-}
- 
+      <div id="button-content">
+        <img src={image} alt="" width="20px" height="20px" />
+        <p>{icontext}</p>
+      </div>
+    </div>
+  );
+};
+
 export default Button;
