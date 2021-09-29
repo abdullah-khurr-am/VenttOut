@@ -1,7 +1,7 @@
 #loginpage{
 background-color: #FF7C23;
 height: 100vh;
-width: 97vw;
+width: 90vw;
 border-radius: 55px;
 display: flex;
 }
@@ -47,6 +47,6 @@ display: flex;
 }
 
 #Guy{
-    margin-left: 850px;
+    margin-left: 700px;
     z-index: 10;
 }
