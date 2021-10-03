@@ -1,7 +1,11 @@
+body{
+    user-select: none;
+}
+
 #loginpage{
 background-color: #FF7C23;
 height: 100vh;
-width: 90vw;
+width: 93vw;
 border-radius: 55px;
 display: flex;
 }
@@ -19,7 +23,6 @@ display: flex;
 
 #sector-right{
     border-radius: 55px;
-    z-index: 4;
     background-color: white;
     width: 55%;
     display: flex;
@@ -29,7 +32,7 @@ display: flex;
 }
 
 #belowbutton{
-    margin-top: 26px;
+    margin-top: 1.625em;
     color: #616161;
 }
 
@@ -43,10 +46,31 @@ display: flex;
     font-weight: 700;
     font-size: 56px;
     color: white;
-    margin-top: 199px;
+    margin-top: 12.4375rem;
 }
 
-#Guy{
-    margin-left: 700px;
+/* #Guy{
+    margin-left: 43.75em;
     z-index: 10;
+    width: 35.125em;
+    height: 26.5em;
+    border: 1px solid black;
+} */
+
+#Guy{
+    margin-left: 35.75em;
+    z-index: 0;
+    width: 35.125em;
+    height: 26.5em;
+    background-image: url("../icons/GuyBook.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.OR{
+    color: grey;
+    font-family: Poppins;
+    font-weight: 400;
+    margin: 20px 0px 11px 0px;
 }

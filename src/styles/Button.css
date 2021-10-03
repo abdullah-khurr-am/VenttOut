@@ -1,12 +1,23 @@
+body{
+    font-size: 16px;
+}
+
 #button{
-    width: 347px;
-    height: 50px;
+    width: 19.6875em;
+    height: 3.125em;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #2D3748;
-    margin: 20px 0px 0px 0px;
+    margin: 1.0em 0em 0em 0em;
+    cursor: pointer;
+    transition: all 0.1s;
+
+}
+
+#button:active{
+    background-color: #14181f;
 }
 
 #button-content{
@@ -18,5 +29,5 @@
 
 #button-content p{
     font-weight: 500;
-    margin-left: 11px;
+    margin-left: 0.6875em;
 }

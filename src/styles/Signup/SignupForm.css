@@ -26,7 +26,6 @@ body{
 .form input, .form label{
     margin-bottom: 0.6875em;
 }
-
 .form label{
     font-size: 16px;
 }
@@ -38,24 +37,23 @@ body{
 
 #loginbutton{
     width: 100%;
-    height: 3.125rem;
+    height: 50px;
     background-color: #400CCE;
     border-radius: 5px;
     color: white;
     font-weight: 700;
     font-size: 16px;
-    transition: all 0.1s;
 }
 
-#loginbutton:active{
-    background-color: #25067a;
-}
 
-.rememberdiv{
-    width: 100%;
+.Disclaimer{
+    margin-bottom: 10px; 
+    font-size: 11px; 
+    color: #C1C1C1;
     display:flex;
-    justify-content:space-between;
-    margin-top: 1em;
-    z-index: 20;
+    align-items: flex-start;
 }
 
+.Disclaimer p {
+    padding-top: -4px;
+}

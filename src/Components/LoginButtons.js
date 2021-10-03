@@ -6,8 +6,8 @@ import "../styles/LoginButtons.css"
 const LoginButtons = () => {
   return (
     <div id="loginbuttons">
-        <p style={{fontSize:"16px",fontWeight:"400"}}>Welcome Back!</p>
-        <p style={{fontSize:"30px",fontWeight:"700"}}>Login To Your Account</p>
+        <p style={{fontSize:"13px",fontWeight:"400"}}>Welcome Back!</p>
+        <p style={{fontSize:"27px",fontWeight:"700"}}>Login To Your Account</p>
         <Button icontext="Sign In With Google" image = {google}/>
         <Button icontext="Sign In With Facebook" image = {facebook}/>
     </div>
