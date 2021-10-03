@@ -1,6 +1,23 @@
+body{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
 .SignupTitle{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 48%;
+    width: 19.6875em;
+}
+
+#Guy{
+    margin-left: 35.75em;
+    z-index: 0;
+    width: 35.125em;
+    height: 26.5em;
+    background-image: url("../../icons/GuyComputer.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

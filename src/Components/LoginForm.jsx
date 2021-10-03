@@ -19,6 +19,7 @@ const LoginForm = () => {
               textDecoration: "none",
               color: "#2C5282",
               fontWeight: "500",
+              marginBottom:"0.6875em"
             }}
           >
             Forgot Password?

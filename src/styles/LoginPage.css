@@ -34,6 +34,9 @@ display: flex;
 #belowbutton{
     margin-top: 1.625em;
     color: #616161;
+    font-size: 0.9em;
+    text-align: center;
+    width: 100%;
 }
 
 #belowbutton a{

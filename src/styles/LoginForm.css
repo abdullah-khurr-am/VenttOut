@@ -55,7 +55,10 @@ body{
     width: 100%;
     display:flex;
     justify-content:space-between;
+    align-items: center;
     margin-top: 1em;
     z-index: 20;
+    font-size: 0.9em;
 }
+
 
