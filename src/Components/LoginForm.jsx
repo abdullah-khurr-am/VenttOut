@@ -25,7 +25,7 @@ const LoginForm = () => {
             Forgot Password?
           </a>
         </div>
-        <button id="loginbutton">Login Now</button>
+        <button id="loginbutton">Login</button>
       </form>
     </div>
   );

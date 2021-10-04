@@ -8,10 +8,10 @@ const SignupPage = () => {
       <div id="loginpage">
         <div className="sector" id="sector-left">
           <p id="punchline">
-            <span>Ventt</span> Your <br />{" "}
+            Vent Your <br />
             <span>Heart Out!</span>
           </p>
-          <div id="Guy"></div>
+          <div id="GuyComputer"></div>
         </div>
         <div className="sector" id="sector-right">
           <div className="SignupTitle">
@@ -21,7 +21,7 @@ const SignupPage = () => {
             </p>
           </div>
           <SignupForm/>
-          <p id="belowbutton">Already Have An Account? <a href="">Join free today</a></p>
+          <p id="belowbutton">Already Have An Account? <a href="">Login Here!</a></p>
 
         </div>
       </div>

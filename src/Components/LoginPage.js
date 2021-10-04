@@ -8,8 +8,8 @@ const LoginPage = () => {
     <div id="loginpage">
       <div className="sector" id="sector-left">
         <p id="punchline">
-          <span style={{ color: "black" }}>Vent</span> Your <br />
-          <span style={{ marginLeft: "0px" }}>Heart Out!</span>
+          <span>Vent</span> Your <br />
+          <span>Heart Out!</span>
         </p>
         <div id="Guy">
         </div>
