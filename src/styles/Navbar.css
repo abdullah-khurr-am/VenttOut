@@ -1,0 +1,58 @@
+body {
+  background-color: white;
+  font-size: 16px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70vw;
+  height: 10vh;
+  padding: 2.3125em 10.5625em;
+}
+
+.navbar .nav-icon {
+  background-image: url("../icons/VentWhite.png");
+  width: 112px;
+  height: 78.07px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navbar .options-right {
+  width: 25%;
+}
+
+.navbar .options-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .options-right ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.navbar .options-right ul .selected {
+  font-weight: 700;
+  color: #400CCE;
+}
+
+.navbar .options-left {
+  width: 25%;
+}
+/*# sourceMappingURL=Navbar.css.map */

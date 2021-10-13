@@ -1,0 +1,45 @@
+$primary : #400CCE ;
+
+body{
+    background-color:white;
+    font-size: 16px;
+
+}
+
+@mixin default-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    @include default-display();
+    width: 70vw;
+    height: 10vh;
+    padding:2.3125em 10.5625em;
+    .nav-icon{
+        background-image: url("../icons/VentWhite.png");
+        width: 112px;
+        height: 78.07px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .options-right{
+        width: 25%;
+        ul{
+            @include default-display();
+            li{
+                text-decoration: none;
+                list-style-type: none;
+            }
+            .selected{
+                font-weight: 700;
+                color: $primary;
+            }
+        }
+    }
+
+    .options-left{
+        width: 25%;
+    }
+}
