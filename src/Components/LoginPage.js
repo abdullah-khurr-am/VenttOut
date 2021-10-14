@@ -2,6 +2,8 @@ import "../styles/LoginPage.css";
 import LoginButtons from "./LoginButtons";
 import LoginForm from "./LoginForm";
 import Guy from "../icons/GuyBook.png";
+import { Link } from "react-router-dom";
+
 
 const LoginPage = () => {
   return (
@@ -24,7 +26,7 @@ const LoginPage = () => {
         <div class="form">
             <LoginForm />
             <p id="belowbutton">
-              Dont have an account? <a href="">Join free today</a>
+              Dont have an account? <Link to="/">Join free today</Link>
             </p>
         </div>
       </div>

@@ -1,9 +1,7 @@
 $primary : #400CCE ;
 
 body{
-    background-color:white;
     font-size: 16px;
-
 }
 
 @mixin default-display {
@@ -14,7 +12,7 @@ body{
 
 .navbar{
     @include default-display();
-    width: 70vw;
+    width: 78vw;
     height: 10vh;
     padding:2.3125em 10.5625em;
     .nav-icon{
@@ -28,6 +26,7 @@ body{
         width: 25%;
         ul{
             @include default-display();
+            padding-left: 0px;
             li{
                 text-decoration: none;
                 list-style-type: none;
@@ -41,5 +40,29 @@ body{
 
     .options-left{
         width: 25%;
+        @include default-display();
+        justify-content: space-around;
+        .User-Settings{
+            width: 70%;
+            @include default-display();
+            justify-content:space-around;
+            align-items: center;
+        }
+        .user{
+            margin-left: -20px;
+            height: fit-content;
+            h3{
+                margin: 0px;
+            }
+            p{
+                color: rgb(155, 155, 155);
+            }
+        }
+        .avatar{
+            border-radius: 50px;
+            border:4px solid $primary;
+            width: 3.25em;
+            height: 3.25em;
+        }
     }
 }

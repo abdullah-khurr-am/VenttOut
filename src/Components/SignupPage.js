@@ -1,6 +1,7 @@
 import SignupForm from "./SignupForm";
 import Guy from "../icons/GuyBook.png";
 import "../styles/Signup/SignupPage.css"
+import { Link } from "react-router-dom";
 
 const SignupPage = () => {
   return (
@@ -21,13 +22,12 @@ const SignupPage = () => {
             </p>
           </div>
           <SignupForm/>
-          <p id="belowbutton">Already Have An Account? <a href="">Login Here!</a></p>
+          <p id="belowbutton">Already Have An Account? <Link to="/login">Login Here!</Link></p>
 
         </div>
       </div>
-      );
     </>
-  );
+  )
 };
 
 export default SignupPage;

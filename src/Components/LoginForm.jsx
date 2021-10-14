@@ -1,4 +1,5 @@
 import "../styles/LoginForm.css";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   return (
@@ -25,7 +26,7 @@ const LoginForm = () => {
             Forgot Password?
           </a>
         </div>
-        <button id="loginbutton">Login</button>
+        <Link to="/NewsFeed" style={{width:"100%"}}><button id="loginbutton">Login</button></Link>
       </form>
     </div>
   );
