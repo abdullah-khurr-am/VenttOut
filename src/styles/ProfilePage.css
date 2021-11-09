@@ -1,0 +1,68 @@
+body {
+  background-color: white;
+}
+
+.mainprofilepage {
+  width: 93%;
+  padding-left: 169px;
+}
+
+.mainprofilepage .uppersection .Welcome p {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 14px;
+  color: #707eae;
+}
+
+.mainprofilepage .uppersection .Welcome h2 {
+  font-weight: 600;
+  font-size: 34px;
+  color: #2b3674;
+  margin: 0px;
+}
+
+.mainprofilepage .uppersection .profiledata {
+  margin-top: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.mainprofilepage .uppersection .profiledata p {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: #494949;
+}
+
+.mainprofilepage .uppersection .profiledata h2 {
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  letter-spacing: -0.02em;
+  color: #FF7C23;
+}
+
+.mainprofilepage .uppersection .profiledata .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 14em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mainprofilepage .uppersection .profiledata .block h2 {
+  margin: 0px;
+}
+
+.mainprofilepage .uppersection .icons {
+  width: 100px;
+  height: 100px;
+}
+/*# sourceMappingURL=ProfilePage.css.map */

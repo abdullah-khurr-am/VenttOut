@@ -1,0 +1,57 @@
+body {
+  background-color: white;
+}
+
+.mainprofilepage {
+  width: 93%;
+  padding-left: 169px;
+  .uppersection {
+    .Welcome {
+      p {
+        font-family: "Roboto";
+        font-weight: bold;
+        font-size: 14px;
+        color: #707eae;
+      }
+      h2 {
+        font-weight: 600;
+        font-size: 34px;
+        color: #2b3674;
+        margin: 0px;
+      }
+    }
+    .profiledata {
+      margin-top: 45px;
+      display: flex;
+      justify-content: space-evenly;
+      p {
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 24px;
+        color: #494949;
+      }
+      h2{
+        font-weight: 500;
+        font-size: 27px;
+        line-height: 32px;
+        /* identical to box height, or 133% */
+        
+        letter-spacing: -0.02em;
+        
+        color: #FF7C23;
+      }
+      .block {
+        display: flex;
+        width: 14em;
+        justify-content: space-between;
+        h2 {
+          margin: 0px;
+        }
+      }
+    }
+    .icons {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

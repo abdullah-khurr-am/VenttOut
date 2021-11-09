@@ -1,0 +1,213 @@
+body {
+  font-family: 'Poppins';
+}
+
+.NewsFeedCard {
+  width: 62.3em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 2px solid #400cce;
+  border-radius: 20px;
+  padding: 14.5px 19px;
+  margin-bottom: 22px;
+}
+
+.NewsFeedCard .upperright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.NewsFeedCard .upperpart {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.NewsFeedCard .upperpart .avatar {
+  width: 67px;
+  height: 67px;
+  background-image: url("../icons/Avatar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f4f7fe;
+  border-radius: 40px;
+}
+
+.NewsFeedCard .upperpart .Nametags {
+  margin-left: 12px;
+}
+
+.NewsFeedCard .upperpart .Nametags h3 {
+  font-size: 16px;
+  color: #1b2559;
+  margin: 0px;
+}
+
+.NewsFeedCard .upperpart .Nametags .timestamp {
+  font-size: 10.5px;
+  color: #8e8e8e;
+}
+
+.NewsFeedCard .upperpart .flag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.NewsFeedCard .upperpart .flag .flagicon {
+  width: 30px;
+  height: 30px;
+  background-image: url("../icons/flag.png");
+  background-size: contain;
+  margin-right: 12px;
+}
+
+.NewsFeedCard .upperpart .flag .flagtag {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.NewsFeedCard .middlepart {
+  margin: 51.5px 0px;
+  margin-bottom: 100px;
+}
+
+.NewsFeedCard .middlepart h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.NewsFeedCard .lowerpart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.NewsFeedCard .lowerpart .postoption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 68px;
+  font-weight: 600;
+}
+
+.NewsFeedCard .lowerpart .postoption .Upvote,
+.NewsFeedCard .lowerpart .postoption .Downvote,
+.NewsFeedCard .lowerpart .postoption .Comment,
+.NewsFeedCard .lowerpart .postoption .Share {
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+}
+
+.NewsFeedCard .lowerpart .postoption .Upvote {
+  background-image: url("../icons/up.png");
+}
+
+.NewsFeedCard .lowerpart .postoption .Downvote {
+  background-image: url("../icons/down.png");
+}
+
+.NewsFeedCard .lowerpart .postoption .Comment {
+  background-image: url("../icons/comment.png");
+}
+
+.NewsFeedCard .lowerpart .postoption .Share {
+  background-image: url("../icons/share.png");
+}
+
+.ProfileCard {
+  width: 22.44em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 2px solid #400cce;
+  border-radius: 20px;
+  padding: 30px 27px;
+}
+
+.ProfileCard .upperpart {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ProfileCard .upperpart .timestamp {
+  font-size: 16.5px;
+  color: #8e8e8e;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.ProfileCard .middlepart {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.ProfileCard .middlepart h3 {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.ProfileCard .lowerpart {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.ProfileCard .lowerpart .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ProfileCard .lowerpart .tags .taghead {
+  font-size: 15px;
+  color: #A3AED0;
+  text-align: center;
+}
+
+.ProfileCard .lowerpart .tags .tagdata {
+  font-size: 24px;
+  color: #1B2559;
+  font-weight: 600;
+  text-align: center;
+}
+/*# sourceMappingURL=Cards.css.map */
