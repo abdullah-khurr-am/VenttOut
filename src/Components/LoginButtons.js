@@ -1,4 +1,4 @@
-import Button from "./Button";
+import {Button} from "./Button";
 import google from "../icons/GoogleIcon.svg";
 import facebook from "../icons/FacebookIcon.svg";
 import "../styles/LoginButtons.css"

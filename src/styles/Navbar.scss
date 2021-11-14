@@ -10,11 +10,166 @@ body{
     align-items: center;
 }
 
+@media screen and (max-width:565px) {
+    .navbarvertical ,.vertinavcover{
+        visibility:visible;
+    }
+    .navbar{
+        .options-right,.options-left{
+            visibility: hidden;
+        }
+        .hamburger{
+            visibility: visible;
+            display: block;
+        }
+    }
+}
+@media screen and (min-width:566px) {
+    .navbarvertical, .vertinavcover{
+        visibility:hidden;
+    }
+    .navbar{
+        .hamburger{
+            display: none;
+        }
+        visibility: visible;
+    }
+}
+
+.vertinavcover{
+    position: fixed;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    top:0;
+    right:0;
+    background-color: aliceblue;
+    height: 150vh;
+}
+
+.navbarvertical{
+    display: flex;
+    ul{
+        flex-direction: column
+    }
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    width: fit-content;
+    height: 30vh;
+    .options-right{
+        width: 100%;
+        ul{
+            @include default-display();
+            justify-content: flex-start;
+            padding-left: 0px;
+            li{
+                text-decoration: none;
+                list-style-type: none;
+            }
+            .selected{
+                font-weight: 700;
+                color: $primary;
+            }
+        }
+    }
+
+    .options-left{
+        width: 100%;
+        @include default-display();
+        justify-content: space-around;
+        .User-Settings{
+            width: 70%;
+            @include default-display();
+            justify-content:space-around;
+            align-items: center;
+        }
+        .user{
+            margin-left: -10px;
+            height: fit-content;
+            h3{
+                margin: 0px;
+            }
+            p{
+                color: rgb(155, 155, 155);
+            }
+        }
+
+        @media screen and (max-width:1245px) and (min-width:1111px){
+            .avatar{
+                height: 3em;
+            }
+        }
+
+        @media screen and (max-width:1110.5px) and (min-width:1040px){
+            .avatar{
+                height: 2.5em;
+            }
+        }
+
+        @media screen and (max-width:1039px){
+            .MyPosts{
+              justify-content: space-between;  
+            }
+            .User-Settings{
+                flex-direction: column;
+            }
+            .avatar{
+                height: 3.25em;
+            }
+        }
+
+        @media screen and (max-width:1400px) and (min-width:1246px){
+            .user{
+                margin-left: 0px;
+                h3{
+                    font-size: 1em;
+                }
+                p{
+                   font-size: 0.9em; 
+                }
+            }
+        }
+
+        @media screen and (max-width:1245px){
+            .user{
+                margin-left: 0px;
+                h3{
+                    font-size: 1em;
+                }
+                p{
+                   font-size: 0.7em; 
+                }
+            }
+        }
+
+        @media screen and (min-width:1246px) {
+            .avatar{
+                height: 3.25em;
+            }
+        }
+
+        .avatar{
+            border-radius: 50px;
+            border:4px solid $primary;
+            width: 3.25em;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+
 .navbar{
     @include default-display();
-    width: 78vw;
+    justify-content: space-evenly;
+    width: 97%;
+    // width: 74vw;
     height: 10vh;
-    padding:2.3125em 10.5625em;
+    // padding:2.3125em 10.5625em;
+    padding:2.3125em 0em;
+    padding-left: 2em;
+    margin-bottom: 3em;
     .nav-icon{
         background-image: url("../icons/VentWhite.png");
         width: 112px;
@@ -26,6 +181,7 @@ body{
         width: 25%;
         ul{
             @include default-display();
+            justify-content: flex-start;
             padding-left: 0px;
             li{
                 text-decoration: none;
@@ -49,7 +205,7 @@ body{
             align-items: center;
         }
         .user{
-            margin-left: -20px;
+            margin-left: -10px;
             height: fit-content;
             h3{
                 margin: 0px;
@@ -58,11 +214,67 @@ body{
                 color: rgb(155, 155, 155);
             }
         }
+
+        @media screen and (max-width:1245px) and (min-width:1111px){
+            .avatar{
+                height: 3em;
+            }
+        }
+
+        @media screen and (max-width:1110.5px) and (min-width:1040px){
+            .avatar{
+                height: 2.5em;
+            }
+        }
+
+        @media screen and (max-width:1039px){
+            .MyPosts{
+              justify-content: space-between;  
+            }
+            .User-Settings{
+                flex-direction: column;
+            }
+            .avatar{
+                height: 3.25em;
+            }
+        }
+
+        @media screen and (max-width:1400px) and (min-width:1246px){
+            .user{
+                margin-left: 0px;
+                h3{
+                    font-size: 1em;
+                }
+                p{
+                   font-size: 0.9em; 
+                }
+            }
+        }
+
+        @media screen and (max-width:1245px){
+            .user{
+                margin-left: 0px;
+                h3{
+                    font-size: 1em;
+                }
+                p{
+                   font-size: 0.7em; 
+                }
+            }
+        }
+
+        @media screen and (min-width:1246px) {
+            .avatar{
+                height: 3.25em;
+            }
+        }
+
         .avatar{
             border-radius: 50px;
             border:4px solid $primary;
             width: 3.25em;
-            height: 3.25em;
+            display: flex;
+            align-items: center;
         }
     }
 }

@@ -31,3 +31,25 @@ body{
     font-weight: 500;
     margin-left: 0.6875em;
 }
+
+.filter{
+    display: flex;
+    width: 300px;
+}
+
+.filterbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33%;
+    height: 40px;
+    border-radius: 30px;
+    transition: 0.2s all ease-in;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+.active{
+    background-color: #400CCE;
+    color: white;
+}

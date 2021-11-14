@@ -137,8 +137,45 @@ body {
   background-image: url("../icons/share.png");
 }
 
+@media screen and (min-width: 1368px) {
+  .ProfileCard {
+    width: 17em;
+  }
+}
+
+@media screen and (max-width: 1039px) and (min-width: 746px) {
+  .ProfileCard {
+    width: 21em;
+  }
+}
+
+@media screen and (max-width: 981px) and (min-width: 752px) {
+  .ProfileCard {
+    width: 17em;
+  }
+}
+
+@media screen and (max-width: 751px) {
+  .ProfileCard {
+    width: 21em;
+  }
+}
+
+@media screen and (max-width: 1367px) and (min-width: 982px) {
+  .ProfileCard {
+    width: 21em;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .MyPosts {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .ProfileCard {
-  width: 22.44em;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -172,7 +209,7 @@ body {
 
 .ProfileCard .middlepart h3 {
   font-weight: 500;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .ProfileCard .lowerpart {

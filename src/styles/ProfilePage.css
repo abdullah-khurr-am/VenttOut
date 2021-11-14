@@ -3,8 +3,21 @@ body {
 }
 
 .mainprofilepage {
-  width: 93%;
-  padding-left: 169px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainprofilepage .mainprofilebody {
+  width: 75%;
 }
 
 .mainprofilepage .uppersection .Welcome p {
@@ -19,6 +32,28 @@ body {
   font-size: 34px;
   color: #2b3674;
   margin: 0px;
+}
+
+@media screen and (min-width: 1275px) {
+  .mainprofilepage .uppersection .profiledata {
+    width: 80%;
+  }
+  .mainprofilepage .uppersection .profiledata .block {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1274px) {
+  .mainprofilepage .uppersection .profiledata {
+    width: 100%;
+  }
+  .mainprofilepage .uppersection .profiledata .block {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .mainprofilepage .uppersection .profiledata {
@@ -52,9 +87,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 14em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .mainprofilepage .uppersection .profiledata .block h2 {
@@ -64,5 +96,60 @@ body {
 .mainprofilepage .uppersection .icons {
   width: 100px;
   height: 100px;
+}
+
+.mainprofilepage .profiletopnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainprofilepage .profiletopnav h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 42px;
+  /* identical to box height, or 124% */
+  letter-spacing: -0.02em;
+  /* Secondary/Grey/900 */
+  color: #2B3674;
+}
+
+@media screen and (max-width: 1039px) and (min-width: 746px) {
+  .mainprofilepage .MyPosts {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+  .mainprofilepage .MyPosts {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .mainprofilepage .MyPosts {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.mainprofilepage .MyPosts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 10px;
 }
 /*# sourceMappingURL=ProfilePage.css.map */

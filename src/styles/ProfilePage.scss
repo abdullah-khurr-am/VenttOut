@@ -3,8 +3,14 @@ body {
 }
 
 .mainprofilepage {
-  width: 93%;
-  padding-left: 169px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .mainprofilebody{
+    width: 75%;
+  }
+  // padding-left: 169px;
   .uppersection {
     .Welcome {
       p {
@@ -20,6 +26,25 @@ body {
         margin: 0px;
       }
     }
+
+    @media screen and (min-width:1275px) {
+      .profiledata{
+        width: 80%;
+        .block{
+          justify-content: space-between;
+        }
+      }
+    }
+
+    @media screen and (max-width:1274px) {
+      .profiledata{
+        width: 100%;
+        .block{
+          justify-content: space-evenly;
+        }
+      }
+    }
+
     .profiledata {
       margin-top: 45px;
       display: flex;
@@ -43,7 +68,6 @@ body {
       .block {
         display: flex;
         width: 14em;
-        justify-content: space-between;
         h2 {
           margin: 0px;
         }
@@ -54,4 +78,47 @@ body {
       height: 100px;
     }
   }
-}
+
+  .profiletopnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3{
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 42px;
+      /* identical to box height, or 124% */
+      
+      letter-spacing: -0.02em;
+      
+      /* Secondary/Grey/900 */
+      
+      color: #2B3674;
+      
+      }
+    }
+
+    @media screen and (max-width:1039px) and (min-width:746px){
+      .MyPosts{
+        justify-content: space-between;  
+      }
+    }
+
+    @media screen and (min-width:1040px){
+      .MyPosts{
+        justify-content: space-between;  
+      }
+    }
+
+    @media screen and (max-width:745px) {
+      .MyPosts{
+        justify-content: center;
+      }
+    }
+
+    .MyPosts{
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 10px;
+    }
+  }

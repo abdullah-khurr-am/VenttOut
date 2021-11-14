@@ -7,6 +7,7 @@ import Layout from './Components/Layout';
 import {NewsFeedCard, ProfileCard} from './Components/Cards';
 import NewsFeed from './Components/NewsFeed';
 import ProfilePage from './Components/ProfilePage';
+import { Filters } from './Components/Button';
 
 function App() {
   return (
@@ -21,8 +22,7 @@ function App() {
           </Layout>
         </Switch>
       </Router>
-      {/* <NewsFeedCard/>
-      <ProfileCard/> */}
+      {/* <Filters/> */}
     </>
     )
 }

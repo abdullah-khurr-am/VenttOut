@@ -1,5 +1,5 @@
 // import Header from './Header';
-import Navbar from './Navbar';
+import {Navbar,NavbarVertical} from './Navbar';
 
 
 const Layout = ({children}) => {
@@ -8,6 +8,7 @@ const Layout = ({children}) => {
         {/* <Header/> */}
         <div>
             <Navbar/>
+            <NavbarVertical/>
             <main>{children}</main>
         </div>
         </>

@@ -2,6 +2,220 @@ body {
   font-size: 16px;
 }
 
+@media screen and (max-width: 565px) {
+  .navbarvertical, .vertinavcover {
+    visibility: visible;
+  }
+  .navbar .options-right, .navbar .options-left {
+    visibility: hidden;
+  }
+  .navbar .hamburger {
+    visibility: visible;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 566px) {
+  .navbarvertical, .vertinavcover {
+    visibility: hidden;
+  }
+  .navbar {
+    visibility: visible;
+  }
+  .navbar .hamburger {
+    display: none;
+  }
+}
+
+.vertinavcover {
+  position: fixed;
+  width: 30vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: 0;
+  background-color: aliceblue;
+  height: 150vh;
+}
+
+.navbarvertical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 30vh;
+}
+
+.navbarvertical ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbarvertical .options-right {
+  width: 100%;
+}
+
+.navbarvertical .options-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 0px;
+}
+
+.navbarvertical .options-right ul li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.navbarvertical .options-right ul .selected {
+  font-weight: 700;
+  color: #400CCE;
+}
+
+.navbarvertical .options-left {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbarvertical .options-left .User-Settings {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  align-items: center;
+}
+
+.navbarvertical .options-left .user {
+  margin-left: -10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.navbarvertical .options-left .user h3 {
+  margin: 0px;
+}
+
+.navbarvertical .options-left .user p {
+  color: #9b9b9b;
+}
+
+@media screen and (max-width: 1245px) and (min-width: 1111px) {
+  .navbarvertical .options-left .avatar {
+    height: 3em;
+  }
+}
+
+@media screen and (max-width: 1110.5px) and (min-width: 1040px) {
+  .navbarvertical .options-left .avatar {
+    height: 2.5em;
+  }
+}
+
+@media screen and (max-width: 1039px) {
+  .navbarvertical .options-left .MyPosts {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbarvertical .options-left .User-Settings {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbarvertical .options-left .avatar {
+    height: 3.25em;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1246px) {
+  .navbarvertical .options-left .user {
+    margin-left: 0px;
+  }
+  .navbarvertical .options-left .user h3 {
+    font-size: 1em;
+  }
+  .navbarvertical .options-left .user p {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  .navbarvertical .options-left .user {
+    margin-left: 0px;
+  }
+  .navbarvertical .options-left .user h3 {
+    font-size: 1em;
+  }
+  .navbarvertical .options-left .user p {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (min-width: 1246px) {
+  .navbarvertical .options-left .avatar {
+    height: 3.25em;
+  }
+}
+
+.navbarvertical .options-left .avatar {
+  border-radius: 50px;
+  border: 4px solid #400CCE;
+  width: 3.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,9 +226,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 78vw;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 97%;
   height: 10vh;
-  padding: 2.3125em 10.5625em;
+  padding: 2.3125em 0em;
+  padding-left: 2em;
+  margin-bottom: 3em;
 }
 
 .navbar .nav-icon {
@@ -39,6 +258,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding-left: 0px;
 }
 
@@ -84,7 +306,7 @@ body {
 }
 
 .navbar .options-left .user {
-  margin-left: -20px;
+  margin-left: -10px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -98,10 +320,74 @@ body {
   color: #9b9b9b;
 }
 
+@media screen and (max-width: 1245px) and (min-width: 1111px) {
+  .navbar .options-left .avatar {
+    height: 3em;
+  }
+}
+
+@media screen and (max-width: 1110.5px) and (min-width: 1040px) {
+  .navbar .options-left .avatar {
+    height: 2.5em;
+  }
+}
+
+@media screen and (max-width: 1039px) {
+  .navbar .options-left .MyPosts {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navbar .options-left .User-Settings {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar .options-left .avatar {
+    height: 3.25em;
+  }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1246px) {
+  .navbar .options-left .user {
+    margin-left: 0px;
+  }
+  .navbar .options-left .user h3 {
+    font-size: 1em;
+  }
+  .navbar .options-left .user p {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  .navbar .options-left .user {
+    margin-left: 0px;
+  }
+  .navbar .options-left .user h3 {
+    font-size: 1em;
+  }
+  .navbar .options-left .user p {
+    font-size: 0.7em;
+  }
+}
+
+@media screen and (min-width: 1246px) {
+  .navbar .options-left .avatar {
+    height: 3.25em;
+  }
+}
+
 .navbar .options-left .avatar {
   border-radius: 50px;
   border: 4px solid #400CCE;
   width: 3.25em;
-  height: 3.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=Navbar.css.map */
