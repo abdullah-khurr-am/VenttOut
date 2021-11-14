@@ -120,7 +120,7 @@ body {
   color: #2B3674;
 }
 
-@media screen and (max-width: 1039px) and (min-width: 746px) {
+@media screen and (max-width: 1039px) and (min-width: 889px) {
   .mainprofilepage .MyPosts {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -136,7 +136,7 @@ body {
   }
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 888px) {
   .mainprofilepage .MyPosts {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

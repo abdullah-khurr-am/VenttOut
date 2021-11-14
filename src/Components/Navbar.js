@@ -1,6 +1,7 @@
 import "../styles/Navbar.css";
 import notification from "../icons/notifications.png";
-import {HiMenu} from 'react-icons/hi';
+import { HiMenu } from "react-icons/hi";
+import { ImCross } from "react-icons/im";
 
 const Navbar = () => {
   return (
@@ -8,7 +9,7 @@ const Navbar = () => {
       <div className="options-right">
         <ul>
           <li className="selected">Dashboard</li>
-          <li style={{marginLeft:"50px"}}>News Feed</li>
+          <li style={{ marginLeft: "50px" }}>News Feed</li>
         </ul>
       </div>
       <div className="nav-icon"></div>
@@ -21,37 +22,39 @@ const Navbar = () => {
             <p>Profile Setting</p>
           </div>
         </div>
-        <div className="hamburger"><HiMenu size="lg"/></div>
+        <div className="hamburger">
+          <HiMenu size="lg" />
+        </div>
       </div>
     </nav>
   );
 };
 
-
 const NavbarVertical = () => {
-  return ( 
-  <div className="vertinavcover">
-    <nav className="navbarvertical">
-        <div className="options-left">
-      <div className="User-Settings">
-        <div className="avatar"></div>
-        <div className="user">
-          <h3>UserName</h3>
-          <p>Profile Setting</p>
+  return (
+    <div className="vertinavcover">
+      <nav className="navbarvertical">
+      <div className="hamburger" style={{width:"fit-content"}}><ImCross/></div>
+        <div>
+          <div className="options-left">
+            <div className="User-Settings">
+              <div className="avatar"></div>
+              <div className="user">
+                <h3>UserName</h3>
+                <p>Profile Setting</p>
+              </div>
+            </div>
+          </div>
+          <div className="options-right">
+            <ul>
+              <li className="selected">Dashboard</li>
+              <li>News Feed</li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </div>
-    <div className="options-right">
-      <ul>
-        <li className="selected">Dashboard</li>
-        <li>News Feed</li>
-      </ul>
-    </div>
-    
-    </nav>
-  </div>
-   );
-}
- 
+  );
+};
 
-export  {Navbar,NavbarVertical};
+export { Navbar, NavbarVertical };

@@ -6,8 +6,14 @@ body {
   .navbarvertical, .vertinavcover {
     visibility: visible;
   }
+  .navbar {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   .navbar .options-right, .navbar .options-left {
     visibility: hidden;
+    display: none;
   }
   .navbar .hamburger {
     visibility: visible;
@@ -20,11 +26,21 @@ body {
     visibility: hidden;
   }
   .navbar {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     visibility: visible;
   }
   .navbar .hamburger {
     display: none;
   }
+}
+
+.overlay {
+  width: 80vw;
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
 }
 
 .vertinavcover {
@@ -50,16 +66,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  height: 30vh;
+  height: 50vh;
+  padding-top: 40px;
 }
 
 .navbarvertical ul {
@@ -220,15 +237,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   width: 97%;
   height: 10vh;
   padding: 2.3125em 0em;

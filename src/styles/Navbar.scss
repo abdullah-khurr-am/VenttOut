@@ -15,8 +15,10 @@ body{
         visibility:visible;
     }
     .navbar{
+        justify-content: space-evenly;
         .options-right,.options-left{
             visibility: hidden;
+            display: none;
         }
         .hamburger{
             visibility: visible;
@@ -29,11 +31,19 @@ body{
         visibility:hidden;
     }
     .navbar{
+        justify-content: space-evenly;
         .hamburger{
             display: none;
         }
         visibility: visible;
     }
+}
+
+.overlay{
+    width: 80vw;
+    height: 20vh;
+    background-color: rgba($color: #000000, $alpha: 0.1);
+    position: absolute;
 }
 
 .vertinavcover{
@@ -53,10 +63,11 @@ body{
         flex-direction: column
     }
     flex-direction: column;
-    align-items: start;
+    align-items: flex-end;
     justify-content: space-evenly;
     width: fit-content;
-    height: 30vh;
+    height: 50vh;
+    padding-top: 40px;
     .options-right{
         width: 100%;
         ul{
@@ -161,8 +172,8 @@ body{
 
 
 .navbar{
-    @include default-display();
-    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
     width: 97%;
     // width: 74vw;
     height: 10vh;
