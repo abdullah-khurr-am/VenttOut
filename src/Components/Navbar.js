@@ -2,10 +2,11 @@ import "../styles/Navbar.css";
 import notification from "../icons/notifications.png";
 import { HiMenu } from "react-icons/hi";
 import { ImCross } from "react-icons/im";
+import motion from "framer-motion";
 
-const Navbar = () => {
+const Navbar = ({check,Setter}) => {
   return (
-    <nav className="navbar">
+    <motion.nav className="navbar">
       <div className="options-right">
         <ul>
           <li className="selected">Dashboard</li>
@@ -23,37 +24,39 @@ const Navbar = () => {
           </div>
         </div>
         <div className="hamburger">
-          <HiMenu size="lg" />
+          <HiMenu size="lg" onClick={()=>{Setter(true)}}/>
         </div>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
-const NavbarVertical = () => {
+const NavbarVertical = ({check,Setter}) => {
   return (
-    <div className="vertinavcover">
-      <nav className="navbarvertical">
-      <div className="hamburger" style={{width:"fit-content"}}><ImCross/></div>
-        <div>
-          <div className="options-left">
-            <div className="User-Settings">
-              <div className="avatar"></div>
-              <div className="user">
-                <h3>UserName</h3>
-                <p>Profile Setting</p>
+     <div className="overlay" onClick={()=>{Setter(false)}}>
+       <div className="vertinavcover">
+        <nav className="navbarvertical">
+        <div className="hamburger" style={{width:"fit-content"}} onClick={()=>{Setter(false)}}><ImCross/></div>
+          <div>
+            <div className="options-left">
+              <div className="User-Settings">
+                <div className="avatar"></div>
+                <div className="user">
+                  <h3>UserName</h3>
+                  <p>Profile Setting</p>
+                </div>
               </div>
             </div>
+            <div className="options-right">
+              <ul>
+                <li className="selected">Dashboard</li>
+                <li>News Feed</li>
+              </ul>
+            </div>
           </div>
-          <div className="options-right">
-            <ul>
-              <li className="selected">Dashboard</li>
-              <li>News Feed</li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
+        </nav>
+           </div>
+     </div>
   );
 };
 
