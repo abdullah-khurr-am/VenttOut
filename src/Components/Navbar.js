@@ -2,11 +2,11 @@ import "../styles/Navbar.css";
 import notification from "../icons/notifications.png";
 import { HiMenu } from "react-icons/hi";
 import { ImCross } from "react-icons/im";
-import motion from "framer-motion";
+// import motion from "framer-motion";
 
 const Navbar = ({check,Setter}) => {
   return (
-    <motion.nav className="navbar">
+    <nav className="navbar">
       <div className="options-right">
         <ul>
           <li className="selected">Dashboard</li>
@@ -27,13 +27,16 @@ const Navbar = ({check,Setter}) => {
           <HiMenu size="lg" onClick={()=>{Setter(true)}}/>
         </div>
       </div>
-    </motion.nav>
+    </nav>
   );
 };
 
 const NavbarVertical = ({check,Setter}) => {
   return (
-     <div className="overlay" onClick={()=>{Setter(false)}}>
+     <div>
+       <div className="overlay" onClick={()=>{Setter(false)}}>
+
+       </div>
        <div className="vertinavcover">
         <nav className="navbarvertical">
         <div className="hamburger" style={{width:"fit-content"}} onClick={()=>{Setter(false)}}><ImCross/></div>

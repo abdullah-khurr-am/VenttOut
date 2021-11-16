@@ -37,13 +37,36 @@ body {
 }
 
 .overlay {
-  width: 80vw;
-  height: 20vh;
+  width: 100vw;
+  height: 120vh;
   background-color: rgba(0, 0, 0, 0.1);
-  position: absolute;
+  position: fixed;
+  top: 0;
+  -webkit-transition: 0.2s all ease-in;
+  transition: 0.2s all ease-in;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    right: -30vw;
+  }
+  100% {
+    right: 30vw;
+  }
+}
+
+@keyframes animation {
+  0% {
+    right: -30vw;
+  }
+  100% {
+    right: 30vw;
+  }
 }
 
 .vertinavcover {
+  -webkit-transition: 0.3s all ease-in;
+  transition: 0.3s all ease-in;
   position: fixed;
   width: 30vw;
   display: -webkit-box;

@@ -48,7 +48,13 @@ body{
     transition: 0.2s all ease-in;
 }
 
+@keyframes animation {
+    0%{right: -30vw;}
+    100%{right: 30vw;}
+}
+
 .vertinavcover{
+    transition: 0.3s all ease-in;
     position: fixed;
     width: 30vw;
     display: flex;
@@ -57,6 +63,8 @@ body{
     right:0;
     background-color: aliceblue;
     height: 150vh;
+    // animation-name: animation;
+    // animation-duration: 0.5s;
 }
 
 .navbarvertical{
