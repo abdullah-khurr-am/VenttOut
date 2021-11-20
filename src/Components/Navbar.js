@@ -2,20 +2,28 @@ import "../styles/Navbar.css";
 import notification from "../icons/notifications.png";
 import { HiMenu } from "react-icons/hi";
 import { ImCross } from "react-icons/im";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 // import motion from "framer-motion";
 
 const Navbar = ({check,Setter}) => {
+  const [selected,SetSelected] = useState("newsfeed");
+
   return (
     <nav className="navbar">
       <div className="options-right">
         <ul>
-          <li className="selected">Dashboard</li>
-          <li style={{ marginLeft: "50px" }}>News Feed</li>
+          <Link to="ProfilePage">
+            <li className={selected==="dashboard"?"selected":""} onClick={()=>SetSelected("dashboard")}>Dashboard</li>
+          </Link>
+          <Link to="NewsFeed">
+            <li className={selected==="newsfeed"?"selected":""} style={{ marginLeft: "50px" }} onClick={()=>SetSelected("newsfeed")}>News Feed</li>
+          </Link>
         </ul>
       </div>
       <div className="nav-icon"></div>
       <div className="options-left">
-        <img src={notification} alt="" width="42px" height="42px" />
+        <img src={notification} alt="" width="35px" height="35px" />
         <div className="User-Settings">
           <div className="avatar"></div>
           <div className="user">

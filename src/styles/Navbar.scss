@@ -3,6 +3,13 @@ $primary : #400CCE ;
 body{
     font-size: 16px;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+a:active{
+    color: black;
+}
 
 @mixin default-display {
     display: flex;

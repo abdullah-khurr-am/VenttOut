@@ -2,13 +2,15 @@ body {
 //   background-color: white;
   font-family: 'Poppins';
 }
-
 .NewsFeedCard {
-  width: 62.3em;
-  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 91%;
+  height: 24em;
   border: 2px solid #400cce;
   border-radius: 20px;
-  padding: 14.5px 19px;
+  padding: 14.5px 38px;
     margin-bottom: 22px;
   .upperright {
     display: flex;
@@ -50,6 +52,7 @@ body {
         background-image: url("../icons/flag.png");
         background-size: contain;
         margin-right: 12px;
+        background-repeat: no-repeat;
       }
       .flagtag {
         font-weight: 700;
@@ -59,11 +62,18 @@ body {
   }
 
   .middlepart {
-    margin: 51.5px 0px;
-    margin-bottom: 100px;
+    // margin: 51.5px 0px;
+    // margin-bottom: 100px;
     h1 {
-      font-size: 25px;
+      font-size: 22px;
       font-weight: 600;
+    }
+    .readmore{
+     width: 100%;
+     p{
+       text-align: center;
+       font-weight: 600;
+     } 
     }
   }
 
@@ -82,6 +92,7 @@ body {
         width: 30px;
         height: 30px;
         background-size: contain;
+        background-repeat: no-repeat;
       }
       .Upvote {
         background-image: url("../icons/up.png");

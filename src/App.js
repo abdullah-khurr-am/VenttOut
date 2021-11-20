@@ -14,11 +14,11 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path="/afadsf" component={SignupPage}/>
+          <Route exact path="/" component={SignupPage}/>
           <Route path="/login" component={LoginPage}/>
           <Layout>
             <Route path="/NewsFeed" component={NewsFeed}/>
-            <Route path="/" component={ProfilePage}/>
+            <Route path="/ProfilePage" component={ProfilePage}/>
           </Layout>
         </Switch>
       </Router>
