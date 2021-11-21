@@ -23,7 +23,7 @@ const Navbar = ({check,Setter}) => {
       </div>
       <div className="nav-icon"></div>
       <div className="options-left">
-        <img src={notification} alt="" width="35px" height="35px" />
+        <img className="notification" src={notification} alt="" width="35px" height="35px" />
         <div className="User-Settings">
           <div className="avatar"></div>
           <div className="user">

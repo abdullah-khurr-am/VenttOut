@@ -16,7 +16,7 @@ const NewsFeed = () => {
 
 const CreatePost = () => {
   return (
-    <div className="createpost">
+    <div className="newsfeedbody">
       <h5>Create Post</h5>
       <div className="createspace">
         <div className="safespace">

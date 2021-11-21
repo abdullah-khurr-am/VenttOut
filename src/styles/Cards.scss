@@ -1,17 +1,16 @@
 body {
-//   background-color: white;
-  font-family: 'Poppins';
+  //   background-color: white;
+  font-family: "Poppins";
 }
 .NewsFeedCard {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 91%;
   height: 24em;
   border: 2px solid #400cce;
   border-radius: 20px;
   padding: 14.5px 38px;
-    margin-bottom: 22px;
+  margin-bottom: 22px;
   .upperright {
     display: flex;
     align-items: center;
@@ -23,8 +22,6 @@ body {
     align-items: center;
     justify-content: space-between;
     .avatar {
-      width: 67px;
-      height: 67px;
       background-image: url("../icons/Avatar.png");
       background-size: contain;
       background-repeat: no-repeat;
@@ -65,32 +62,27 @@ body {
     // margin: 51.5px 0px;
     // margin-bottom: 100px;
     h1 {
-      font-size: 22px;
       font-weight: 600;
     }
-    .readmore{
-     width: 100%;
-     p{
-       text-align: center;
-       font-weight: 600;
-     } 
+    .readmore {
+      width: 100%;
+      p {
+        text-align: center;
+        font-weight: 600;
+      }
     }
   }
 
   .lowerpart {
     display: flex;
-    justify-content: flex-start;
     .postoption {
       display: flex;
       align-items: center;
-      margin-left: 68px;
       font-weight: 600;
       .Upvote,
       .Downvote,
       .Comment,
       .Share {
-        width: 30px;
-        height: 30px;
         background-size: contain;
         background-repeat: no-repeat;
       }
@@ -110,89 +102,184 @@ body {
   }
 }
 
-@media screen and (min-width:1368px) {
-  .ProfileCard{
+@media screen and (min-width: 541px) {
+  .NewsFeedCard {
+    width: 91%;
+  }
+  .avatar {
+    width: 67px;
+    height: 67px;
+  }
+  .middlepart {
+    h1 {
+      font-size: 22px;
+    }
+  }
+  .Upvote,
+  .Downvote,
+  .Comment,
+  .Share {
+    width: 30px;
+    height: 30px;
+  }
+  .postoption {
+    margin-left: 68px;
+  }
+  .lowerpart {
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 360px){
+  .NewsFeedCard {
+    width: 77%;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .middlepart {
+    h1 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  .Upvote,
+  .Downvote,
+  .Comment,
+  .Share {
+    width: 25px;
+    height: 25px;
+  }
+  .avatar{
+    width: 40px;
+    height: 40px;
+  }
+  .postoption {
+    margin-left: 10%;
+  }
+  .lowerpart {
+    justify-content: center;
+  }
+  .showhide{
+    display: none;
+  }
+}
+@media screen and (max-width: 540px) and (min-width:361px){
+  .NewsFeedCard {
+    width: 85%;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .middlepart {
+    h1 {
+      font-size: 22px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .Upvote,
+  .Downvote,
+  .Comment,
+  .Share {
+    width: 25px;
+    height: 25px;
+  }
+  .postoption {
+    margin-left: 10%;
+  }
+  .lowerpart {
+    justify-content: center;
+  }
+  .showhide{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1368px) {
+  .ProfileCard {
     width: 17em;
   }
 }
 
-@media screen and (max-width:1039px) and (min-width:746px){
-  .ProfileCard{
-    width: 21em;  
+@media screen and (max-width: 1039px) and (min-width: 746px) {
+  .ProfileCard {
+    width: 21em;
   }
 }
 
-@media screen and (max-width:1059px) and (min-width:889px){
-  .ProfileCard{
+@media screen and (max-width: 1059px) and (min-width: 889px) {
+  .ProfileCard {
     width: 17em;
   }
 }
 
-@media  screen and (max-width:888px) {
-  .ProfileCard{
+@media screen and (max-width: 888px) {
+  .ProfileCard {
     width: 21em;
   }
 }
 
-@media screen and (max-width:1367px) and (min-width:1060px){
-  .ProfileCard{
+@media screen and (max-width: 1367px) and (min-width: 1060px) {
+  .ProfileCard {
     width: 21em;
   }
 }
 
-@media screen and (max-width:745px) {
-  .MyPosts{
+@media screen and (max-width: 745px) {
+  .MyPosts {
     justify-content: center;
   }
 }
 
-
-
-
 .ProfileCard {
-    height: fit-content;
-    border: 2px solid #400cce;
-    border-radius: 20px;
-    padding: 30px 27px;
+  height: fit-content;
+  border: 2px solid #400cce;
+  border-radius: 20px;
+  padding: 30px 27px;
   .upperpart {
     width: 100%;
     display: flex;
     justify-content: center;
-      .timestamp {
-        font-size: 16.5px;
-        color: #8e8e8e;
-        font-weight: 500;
-        margin-top: 10px;
-      }
-  }
-  .middlepart{
-      width: 100%;
-      padding-top: 30px;
-      padding-bottom: 30px;
-    h3{
-        font-weight: 500;
-        font-size: 15px;
+    .timestamp {
+      font-size: 16.5px;
+      color: #8e8e8e;
+      font-weight: 500;
+      margin-top: 10px;
     }
   }
-  .lowerpart{
-      width: 100%;
+  .middlepart {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h3 {
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+  .lowerpart {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    .tags {
       display: flex;
-      justify-content: space-evenly;
-      .tags{
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          .taghead{
-              font-size: 15px;
-              color: #A3AED0;
-              text-align: center;
-          }
-          .tagdata{
-              font-size: 24px;
-              color: #1B2559;
-              font-weight: 600;
-              text-align: center;
-          }
+      flex-direction: column;
+      justify-content: center;
+      .taghead {
+        font-size: 15px;
+        color: #a3aed0;
+        text-align: center;
       }
+      .tagdata {
+        font-size: 24px;
+        color: #1b2559;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
   }
 }

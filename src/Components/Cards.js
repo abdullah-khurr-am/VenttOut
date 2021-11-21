@@ -12,6 +12,7 @@ const NewsFeedCard = ({
   date,
 }) => {
   const [cardlength, SetLength] = useState(false);
+  const [screensize,SetSize] = useState(false);
 
   useEffect(() => {
     if (subtext.split(" ").length >= 20){
@@ -23,6 +24,7 @@ const NewsFeedCard = ({
     console.log(cardlength);
     console.log(subtext.split(" ").length);
   }, []);
+
 
   return (
     <div className="NewsFeedCard">
@@ -38,12 +40,12 @@ const NewsFeedCard = ({
         </div>
         <div className="flag">
           <div className="flagicon"></div>
-          <p className="flagtag">Flag</p>
+          <p className="flagtag"><span className="showhide">Flag</span></p>
         </div>
       </div>
       <div className="middlepart">
         <h1>{headline}</h1>
-        <p> {cardlength?subtext.split(" ").splice(0,30).join(" ")+". . . .":subtext}</p>
+        <p> {cardlength?subtext.split(" ").splice(0,20).join(" ")+". . . .":subtext}</p>
         {cardlength && (
           <div className="readmore">
             <p>Read More{">"}</p>
@@ -64,7 +66,7 @@ const NewsFeedCard = ({
             <span style={{ marginLeft: "5px", marginRight: "5px" }}>
               {comments}
             </span>{" "}
-            Comments
+            <span className="showhide">Comments</span>
           </div>
         </div>
         <div className="postoption">
@@ -73,7 +75,7 @@ const NewsFeedCard = ({
             <span style={{ marginLeft: "5px", marginRight: "5px" }}>
               {share}
             </span>{" "}
-            Shares
+            <span className="showhide">Shares</span>
           </div>
         </div>
       </div>

@@ -17,11 +17,17 @@ a:active{
     align-items: center;
 }
 
-@media screen and (max-width:565px) {
+@media screen and (max-width:622px) {
     .navbarvertical ,.vertinavcover{
         visibility:visible;
     }
+    .options-left{
+        .User-Settings , .notification{
+            display: none;
+        }
+    }
     .navbar{
+        width: 93%;
         justify-content: space-evenly;
         .options-right,.options-left{
             visibility: hidden;
@@ -33,11 +39,12 @@ a:active{
         }
     }
 }
-@media screen and (min-width:566px) {
+@media screen and (min-width:623px) {
     .navbarvertical, .vertinavcover{
         visibility:hidden;
     }
     .navbar{
+        width: 97%;
         justify-content: space-evenly;
         .hamburger{
             display: none;
@@ -63,7 +70,7 @@ a:active{
 .vertinavcover{
     transition: 0.3s all ease-in;
     position: fixed;
-    width: 30vw;
+    width: 40vw;
     display: flex;
     justify-content: center;
     top:0;
@@ -191,7 +198,6 @@ a:active{
 .navbar{
     display: flex;
     align-items: center;
-    width: 97%;
     // width: 74vw;
     height: 10vh;
     // padding:2.3125em 10.5625em;

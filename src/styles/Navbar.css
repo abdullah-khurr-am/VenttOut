@@ -11,11 +11,15 @@ a:active {
   color: black;
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 622px) {
   .navbarvertical, .vertinavcover {
     visibility: visible;
   }
+  .options-left .User-Settings, .options-left .notification {
+    display: none;
+  }
   .navbar {
+    width: 93%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -30,11 +34,12 @@ a:active {
   }
 }
 
-@media screen and (min-width: 566px) {
+@media screen and (min-width: 623px) {
   .navbarvertical, .vertinavcover {
     visibility: hidden;
   }
   .navbar {
+    width: 97%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -77,7 +82,7 @@ a:active {
   -webkit-transition: 0.3s all ease-in;
   transition: 0.3s all ease-in;
   position: fixed;
-  width: 30vw;
+  width: 40vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,7 +277,6 @@ a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 97%;
   height: 10vh;
   padding: 2.3125em 0em;
   padding-left: 2em;

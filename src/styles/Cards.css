@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 .NewsFeedCard {
@@ -13,7 +13,6 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  width: 91%;
   height: 24em;
   border: 2px solid #400cce;
   border-radius: 20px;
@@ -44,8 +43,6 @@ body {
 }
 
 .NewsFeedCard .upperpart .avatar {
-  width: 67px;
-  height: 67px;
   background-image: url("../icons/Avatar.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -92,7 +89,6 @@ body {
 }
 
 .NewsFeedCard .middlepart h1 {
-  font-size: 22px;
   font-weight: 600;
 }
 
@@ -109,9 +105,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 .NewsFeedCard .lowerpart .postoption {
@@ -121,7 +114,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 68px;
   font-weight: 600;
 }
 
@@ -129,8 +121,6 @@ body {
 .NewsFeedCard .lowerpart .postoption .Downvote,
 .NewsFeedCard .lowerpart .postoption .Comment,
 .NewsFeedCard .lowerpart .postoption .Share {
-  width: 30px;
-  height: 30px;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -149,6 +139,106 @@ body {
 
 .NewsFeedCard .lowerpart .postoption .Share {
   background-image: url("../icons/share.png");
+}
+
+@media screen and (min-width: 541px) {
+  .NewsFeedCard {
+    width: 91%;
+  }
+  .avatar {
+    width: 67px;
+    height: 67px;
+  }
+  .middlepart h1 {
+    font-size: 22px;
+  }
+  .Upvote,
+  .Downvote,
+  .Comment,
+  .Share {
+    width: 30px;
+    height: 30px;
+  }
+  .postoption {
+    margin-left: 68px;
+  }
+  .lowerpart {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .NewsFeedCard {
+    width: 77%;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .middlepart h1 {
+    font-size: 15px;
+  }
+  .middlepart p {
+    font-size: 13px;
+  }
+  .Upvote,
+  .Downvote,
+  .Comment,
+  .Share {
+    width: 25px;
+    height: 25px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .postoption {
+    margin-left: 10%;
+  }
+  .lowerpart {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .showhide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) and (min-width: 361px) {
+  .NewsFeedCard {
+    width: 85%;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .middlepart h1 {
+    font-size: 22px;
+  }
+  .middlepart p {
+    font-size: 14px;
+  }
+  .Upvote,
+  .Downvote,
+  .Comment,
+  .Share {
+    width: 25px;
+    height: 25px;
+  }
+  .postoption {
+    margin-left: 10%;
+  }
+  .lowerpart {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .showhide {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1368px) {
@@ -251,13 +341,13 @@ body {
 
 .ProfileCard .lowerpart .tags .taghead {
   font-size: 15px;
-  color: #A3AED0;
+  color: #a3aed0;
   text-align: center;
 }
 
 .ProfileCard .lowerpart .tags .tagdata {
   font-size: 24px;
-  color: #1B2559;
+  color: #1b2559;
   font-weight: 600;
   text-align: center;
 }
