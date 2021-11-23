@@ -8,7 +8,6 @@
   align-items: center;
 
   .newsfeedtitle {
-    width: 75%;
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
@@ -24,8 +23,41 @@
   }
 }
 
-.createpost {
-  width: 65%;
+@media screen and (max-width: 360px){
+  .newsfeedbody{
+    width: 90%;
+  }
+  .safespace{
+    width: 85%;
+  }
+  .newsfeedtitle{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 540px) and (min-width:361px) {
+  .newsfeedbody{
+    width: 90%;
+  }
+  .safespace{
+    width: 90%;
+  }
+  .newsfeedtitle{
+    width: 90%;
+  }
+}
+@media screen and (min-width: 541px) {
+  .newsfeedbody{
+    width: 65%;
+  }
+  .safespace{
+    width: 93%;
+  }
+  .newsfeedtitle{
+    width: 75%;
+  }
+}
+
+.newsfeedbody {
   h5 {
     font-family: Poppins;
     font-style: normal;
@@ -53,7 +85,6 @@
       padding: 0px 15px;
       display: flex;
       align-items: center;
-      width: 93%;
       height: 60%;
       background-color: white;
       border-radius: 12px;
