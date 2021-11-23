@@ -24,9 +24,14 @@ a:active {
     visibility: hidden;
     display: none;
   }
-  .navbar .hamburger {
+  .navbar .options-right .hamburger, .navbar .options-left .hamburger {
     visibility: visible;
     display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../icons/hamburger.png");
+    background-position: center;
+    background-size: contain;
   }
 }
 
@@ -272,7 +277,7 @@ a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 97%;
+  width: 97vw;
   height: 10vh;
   padding: 2.3125em 0em;
   padding-left: 2em;

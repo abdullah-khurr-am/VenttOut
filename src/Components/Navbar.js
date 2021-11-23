@@ -32,7 +32,6 @@ const Navbar = ({check,Setter}) => {
           </div>
         </div>
         <div className="hamburger">
-          <HiMenu size="lg" onClick={()=>{Setter(true)}}/>
         </div>
       </div>
     </nav>

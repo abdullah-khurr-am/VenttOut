@@ -26,10 +26,15 @@ a:active{
         .options-right,.options-left{
             visibility: hidden;
             display: none;
-        }
-        .hamburger{
-            visibility: visible;
-            display: block;
+            .hamburger{ 
+                visibility: visible;
+                display: block;
+                width:24px;
+                height: 24px;
+                background-image: url("../icons/hamburger.png");
+                background-position: center;
+                background-size: contain;
+            }
         }
     }
 }
@@ -191,7 +196,7 @@ a:active{
 .navbar{
     display: flex;
     align-items: center;
-    width: 97%;
+    width: 97vw;
     // width: 74vw;
     height: 10vh;
     // padding:2.3125em 10.5625em;
