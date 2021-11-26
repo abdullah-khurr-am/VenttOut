@@ -1,5 +1,4 @@
 .body {
-  width: 98vw;
   background-color: white;
   overflow: hidden;
   display: -webkit-box;
@@ -29,11 +28,56 @@
   color: #2b3674;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
+  body {
+    width: 107vw;
+  }
+  .createposticon {
+    width: 32px;
+    height: 29px;
+    background-size: 13px;
+  }
+  .safespacetitle p {
+    font-size: 14px;
+  }
+  .newsfeedtitle {
+    text-align: center;
+  }
+  .newsfeedbody h5 {
+    text-align: center;
+  }
   .newsfeedbody {
     width: 90%;
   }
   .safespace {
+    height: 76%;
+    width: 85%;
+  }
+  .newsfeedtitle {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 360px) and (min-width: 321px) {
+  body {
+    width: 98vw;
+  }
+  .createposticon {
+    width: 34px;
+    height: 34px;
+    background-size: 16px;
+  }
+  .newsfeedtitle {
+    text-align: center;
+  }
+  .newsfeedbody h5 {
+    text-align: center;
+  }
+  .newsfeedbody {
+    width: 90%;
+  }
+  .safespace {
+    height: 60%;
     width: 85%;
   }
   .newsfeedtitle {
@@ -42,10 +86,25 @@
 }
 
 @media screen and (max-width: 540px) and (min-width: 361px) {
+  body {
+    width: 98vw;
+  }
+  .createposticon {
+    width: 34px;
+    height: 34px;
+    background-size: 16px;
+  }
+  .newsfeedtitle {
+    text-align: center;
+  }
+  .newsfeedbody h5 {
+    text-align: center;
+  }
   .newsfeedbody {
     width: 90%;
   }
   .safespace {
+    height: 60%;
     width: 90%;
   }
   .newsfeedtitle {
@@ -54,10 +113,21 @@
 }
 
 @media screen and (min-width: 541px) {
+  body {
+    width: 98vw;
+  }
+  .createposticon {
+    background-size: 16px;
+  }
+  .createposticon {
+    width: 34px;
+    height: 34px;
+  }
   .newsfeedbody {
     width: 65%;
   }
   .safespace {
+    height: 60%;
     width: 93%;
   }
   .newsfeedtitle {
@@ -79,7 +149,7 @@
 }
 
 .newsfeedbody .createspace {
-  width: 100%;
+  width: 102%;
   height: 88px;
   background-color: #f2f4f8;
   display: -webkit-box;
@@ -102,7 +172,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60%;
   background-color: white;
   border-radius: 12px;
   -webkit-box-pack: justify;
@@ -120,11 +189,8 @@
 }
 
 .newsfeedbody .createspace .safespace .createposticon {
-  width: 34px;
-  height: 34px;
-  background-color: #6E41E2;
+  background-color: #6e41e2;
   background-image: url("../icons/Union.png");
-  background-size: 16px;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 20px;

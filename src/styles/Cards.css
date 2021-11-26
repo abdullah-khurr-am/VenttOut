@@ -169,9 +169,85 @@ body {
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 320px) {
   .NewsFeedCard {
-    width: 77%;
+    width: 78%;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .middlepart h1 {
+    font-size: 15px;
+  }
+  .middlepart p {
+    font-size: 13px;
+  }
+  .Upvote,
+  .Downvote,
+  .Comment,
+  .Share {
+    width: 25px;
+    height: 25px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .postoption {
+    margin-left: 10%;
+  }
+  .lowerpart {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .showhide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 281px) {
+  .NewsFeedCard {
+    width: 72%;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+  }
+  .middlepart h1 {
+    font-size: 15px;
+  }
+  .middlepart p {
+    font-size: 11px;
+  }
+  .Upvote,
+  .Downvote,
+  .Comment,
+  .Share {
+    width: 25px;
+    height: 25px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .postoption {
+    margin-left: 10%;
+  }
+  .lowerpart {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .showhide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) and (min-width: 321px) {
+  .NewsFeedCard {
+    width: 80%;
   }
   .avatar {
     width: 50px;
@@ -209,17 +285,17 @@ body {
 
 @media screen and (max-width: 540px) and (min-width: 361px) {
   .NewsFeedCard {
-    width: 85%;
+    width: 81%;
   }
   .avatar {
     width: 50px;
     height: 50px;
   }
   .middlepart h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .middlepart p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .Upvote,
   .Downvote,

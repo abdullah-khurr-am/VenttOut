@@ -27,14 +27,17 @@ a:active{
         }
     }
     .navbar{
-        width: 93%;
-        justify-content: space-evenly;
+        width: 100%;
+        justify-content: center;
+        padding: 0px;
+        padding-top: 2.3125em;
         .options-right,.options-left{
             visibility: hidden;
             display: none;
             .hamburger{ 
                 visibility: visible;
-                display: block;
+                position: absolute;
+                right: 5px;
                 width:24px;
                 height: 24px;
                 background-image: url("../icons/hamburger.png");
@@ -42,15 +45,21 @@ a:active{
                 background-size: contain;
             }
         }
+        .nav-icon{
+            position: relative;
+            left: 16%;
+        }
     }
 }
-@media screen and (min-width:623px) {
+@media screen and (min-width:622px) {
     .navbarvertical, .vertinavcover{
         visibility:hidden;
     }
     .navbar{
         width: 97%;
         justify-content: space-evenly;
+        padding:2.3125em 0em;
+        padding-left: 2em;        
         .hamburger{
             display: none;
         }
@@ -118,7 +127,7 @@ a:active{
         width: 100%;
         @include default-display();
         justify-content: space-around;
-        .User-Settings{
+        .User-Settings, .Verti-User-Settings{
             width: 70%;
             @include default-display();
             justify-content:space-around;
@@ -151,11 +160,16 @@ a:active{
             .MyPosts{
               justify-content: space-between;  
             }
-            .User-Settings{
+            .User-Settings, .Verti-User-Settings{
                 flex-direction: column;
             }
             .avatar{
                 height: 3.25em;
+            }
+        }
+        @media screen and (max-width:1023px) {
+            .User-Settings{
+                display: none;
             }
         }
 
@@ -203,15 +217,10 @@ a:active{
 .navbar{
     display: flex;
     align-items: center;
-<<<<<<< HEAD
     width: 97vw;
-=======
->>>>>>> fb37329eedfb875faf1c0f9e0d6c78e074739a96
     // width: 74vw;
     height: 10vh;
     // padding:2.3125em 10.5625em;
-    padding:2.3125em 0em;
-    padding-left: 2em;
     margin-bottom: 3em;
     .nav-icon{
         background-image: url("../icons/VentWhite.png");

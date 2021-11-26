@@ -19,10 +19,12 @@ a:active {
     display: none;
   }
   .navbar {
-    width: 93%;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+    padding-top: 2.3125em;
   }
   .navbar .options-right, .navbar .options-left {
     visibility: hidden;
@@ -30,16 +32,21 @@ a:active {
   }
   .navbar .options-right .hamburger, .navbar .options-left .hamburger {
     visibility: visible;
-    display: block;
+    position: absolute;
+    right: 5px;
     width: 24px;
     height: 24px;
     background-image: url("../icons/hamburger.png");
     background-position: center;
     background-size: contain;
   }
+  .navbar .nav-icon {
+    position: relative;
+    left: 16%;
+  }
 }
 
-@media screen and (min-width: 623px) {
+@media screen and (min-width: 622px) {
   .navbarvertical, .vertinavcover {
     visibility: hidden;
   }
@@ -48,6 +55,8 @@ a:active {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    padding: 2.3125em 0em;
+    padding-left: 2em;
     visibility: visible;
   }
   .navbar .hamburger {
@@ -173,7 +182,7 @@ a:active {
       justify-content: space-around;
 }
 
-.navbarvertical .options-left .User-Settings {
+.navbarvertical .options-left .User-Settings, .navbarvertical .options-left .Verti-User-Settings {
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,7 +231,7 @@ a:active {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .navbarvertical .options-left .User-Settings {
+  .navbarvertical .options-left .User-Settings, .navbarvertical .options-left .Verti-User-Settings {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -230,6 +239,12 @@ a:active {
   }
   .navbarvertical .options-left .avatar {
     height: 3.25em;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .navbarvertical .options-left .User-Settings {
+    display: none;
   }
 }
 
@@ -282,13 +297,8 @@ a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-<<<<<<< HEAD
   width: 97vw;
-=======
->>>>>>> fb37329eedfb875faf1c0f9e0d6c78e074739a96
   height: 10vh;
-  padding: 2.3125em 0em;
-  padding-left: 2em;
   margin-bottom: 3em;
 }
 

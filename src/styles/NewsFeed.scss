@@ -1,5 +1,4 @@
 .body {
-  width: 98vw;
   background-color: white;
   overflow: hidden;
   display: flex;
@@ -23,36 +22,115 @@
   }
 }
 
-@media screen and (max-width: 360px){
-  .newsfeedbody{
+@media screen and (max-width: 320px) {
+  body{
+    width: 107vw;
+  }
+  .createposticon {
+    width: 32px;
+    height: 29px;
+    background-size: 13px;
+  }
+  .safespacetitle{
+    p{
+      font-size: 14px;
+    }
+  }
+  .newsfeedtitle {
+    text-align: center;
+  }
+  .newsfeedbody {
+    h5 {
+      text-align: center;
+    }
+  }
+  .newsfeedbody {
     width: 90%;
   }
-  .safespace{
+  .safespace {
+    height: 76%;
     width: 85%;
   }
-  .newsfeedtitle{
+  .newsfeedtitle {
     width: 90%;
   }
 }
-@media screen and (max-width: 540px) and (min-width:361px) {
-  .newsfeedbody{
+
+@media screen and (max-width: 360px) and (min-width: 321px) {
+  body{
+    width: 98vw;
+  }
+  .createposticon {
+    width: 34px;
+    height: 34px;
+    background-size: 16px;
+  }
+  .newsfeedtitle {
+    text-align: center;
+  }
+  .newsfeedbody {
+    h5 {
+      text-align: center;
+    }
+  }
+  .newsfeedbody {
     width: 90%;
   }
-  .safespace{
+  .safespace {
+    height: 60%;
+    width: 85%;
+  }
+  .newsfeedtitle {
     width: 90%;
   }
-  .newsfeedtitle{
+}
+@media screen and (max-width: 540px) and (min-width: 361px) {
+  body{
+    width: 98vw;
+  }
+  .createposticon {
+    width: 34px;
+    height: 34px;
+    background-size: 16px;
+  }
+  .newsfeedtitle {
+    text-align: center;
+  }
+  .newsfeedbody {
+    h5 {
+      text-align: center;
+    }
+  }
+  .newsfeedbody {
+    width: 90%;
+  }
+  .safespace {
+    height: 60%;
+    width: 90%;
+  }
+  .newsfeedtitle {
     width: 90%;
   }
 }
 @media screen and (min-width: 541px) {
-  .newsfeedbody{
+  body{
+    width: 98vw;
+  }
+  .createposticon{
+    background-size: 16px;
+  }
+  .createposticon {
+    width: 34px;
+    height: 34px;
+  }
+  .newsfeedbody {
     width: 65%;
   }
-  .safespace{
+  .safespace {
+    height: 60%;
     width: 93%;
   }
-  .newsfeedtitle{
+  .newsfeedtitle {
     width: 75%;
   }
 }
@@ -74,7 +152,7 @@
     margin-bottom: 2%;
   }
   .createspace {
-    width: 100%;
+    width: 102%;
     height: 88px;
     background-color: #f2f4f8;
     display: flex;
@@ -85,7 +163,6 @@
       padding: 0px 15px;
       display: flex;
       align-items: center;
-      height: 60%;
       background-color: white;
       border-radius: 12px;
       justify-content: space-between;
@@ -99,27 +176,24 @@
 
         letter-spacing: -0.02em;
       }
-      .createposticon{
-          width: 34px;
-          height: 34px;
-          background-color: #6E41E2;
-          background-image: url("../icons/Union.png");
-          background-size: 16px;
-          background-repeat: no-repeat;
-          background-position: center;
-          border-radius: 20px;
+      .createposticon {
+        background-color: #6e41e2;
+        background-image: url("../icons/Union.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 20px;
       }
     }
   }
 }
 
-.newsfeedposts{
+.newsfeedposts {
   width: 100%;
   margin-top: 20px;
 }
 
-.filters{
-    margin-top: 32px;
+.filters {
+  margin-top: 32px;
 }
 
 .navbar {

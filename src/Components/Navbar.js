@@ -6,24 +6,41 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 // import motion from "framer-motion";
 
-const Navbar = ({check,Setter}) => {
-  const [selected,SetSelected] = useState("newsfeed");
+const Navbar = ({ check, Setter }) => {
+  const [selected, SetSelected] = useState("newsfeed");
 
   return (
     <nav className="navbar">
       <div className="options-right">
         <ul>
           <Link to="ProfilePage">
-            <li className={selected==="dashboard"?"selected":""} onClick={()=>SetSelected("dashboard")}>Dashboard</li>
+            <li
+              className={selected === "dashboard" ? "selected" : ""}
+              onClick={() => SetSelected("dashboard")}
+            >
+              Dashboard
+            </li>
           </Link>
           <Link to="NewsFeed">
-            <li className={selected==="newsfeed"?"selected":""} style={{ marginLeft: "50px" }} onClick={()=>SetSelected("newsfeed")}>News Feed</li>
+            <li
+              className={selected === "newsfeed" ? "selected" : ""}
+              style={{ marginLeft: "50px" }}
+              onClick={() => SetSelected("newsfeed")}
+            >
+              News Feed
+            </li>
           </Link>
         </ul>
       </div>
       <div className="nav-icon"></div>
       <div className="options-left">
-        <img className="notification" src={notification} alt="" width="35px" height="35px" />
+        <img
+          className="notification"
+          src={notification}
+          alt=""
+          width="35px"
+          height="35px"
+        />
         <div className="User-Settings">
           <div className="avatar"></div>
           <div className="user">
@@ -31,25 +48,44 @@ const Navbar = ({check,Setter}) => {
             <p>Profile Setting</p>
           </div>
         </div>
-        <div className="hamburger">
-        </div>
+        <div
+          className="hamburger"
+          onClick={() => {
+            Setter(true);
+          }}
+        ></div>
       </div>
     </nav>
   );
 };
 
-const NavbarVertical = ({check,Setter}) => {
-  return (
-     <div>
-       <div className="overlay" onClick={()=>{Setter(false)}}>
+const NavbarVertical = ({ check, Setter }) => {
 
-       </div>
-       <div className="vertinavcover">
+  const [selected, SetSelected] = useState("newsfeed");
+
+
+  return (
+    <div>
+      <div
+        className="overlay"
+        onClick={() => {
+          Setter(false);
+        }}
+      ></div>
+      <div className="vertinavcover">
         <nav className="navbarvertical">
-        <div className="hamburger" style={{width:"fit-content"}} onClick={()=>{Setter(false)}}><ImCross/></div>
+          <div
+            className="hamburger"
+            style={{ width: "fit-content" }}
+            onClick={() => {
+              Setter(false);
+            }}
+          >
+            <ImCross />
+          </div>
           <div>
             <div className="options-left">
-              <div className="User-Settings">
+              <div className="Verti-User-Settings">
                 <div className="avatar"></div>
                 <div className="user">
                   <h3>UserName</h3>
@@ -59,14 +95,28 @@ const NavbarVertical = ({check,Setter}) => {
             </div>
             <div className="options-right">
               <ul>
-                <li className="selected">Dashboard</li>
-                <li>News Feed</li>
+                <Link to="ProfilePage">
+                  <li
+                    className={selected === "dashboard" ? "selected" : ""}
+                    onClick={() => SetSelected("dashboard")}
+                  >
+                    Dashboard
+                  </li>
+                </Link>
+                <Link to="NewsFeed">
+                  <li
+                    className={selected === "newsfeed" ? "selected" : ""}
+                    onClick={() => SetSelected("newsfeed")}
+                  >
+                    News Feed
+                  </li>
+                </Link>
               </ul>
             </div>
           </div>
         </nav>
-           </div>
-     </div>
+      </div>
+    </div>
   );
 };
 
