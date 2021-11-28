@@ -4,6 +4,34 @@ body {
   padding: 0;
 }
 
+@media screen and (max-width: 510px) {
+  .icons {
+    display: none;
+  }
+  .block h2 {
+    text-align: center;
+  }
+  .profiletopnav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 622px) {
+  .mainprofilebody {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 622px) {
+  .mainprofilebody {
+    width: 75%;
+  }
+}
+
 .mainprofilepage {
   width: 100vw;
   display: -webkit-box;
@@ -16,10 +44,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.mainprofilepage .mainprofilebody {
-  width: 75%;
 }
 
 .mainprofilepage .uppersection .Welcome p {

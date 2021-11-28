@@ -5,6 +5,7 @@ const NewsFeedCard = ({
   genusername,
   headline,
   subtext,
+  image,
   likes,
   comments,
   share,

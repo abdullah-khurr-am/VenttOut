@@ -4,14 +4,38 @@ body {
   padding: 0;
 }
 
+@media screen and (max-width:510px) {
+  .icons{
+    display: none;
+  }
+  .block{
+    h2{
+      text-align: center;
+    }
+  }
+  .profiletopnav{
+    flex-direction: column;
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width:622px) {
+  .mainprofilebody{
+    width: 90%;
+  }
+}
+
+@media screen and (min-width:622px) {
+  .mainprofilebody{
+    width: 75%;
+  }
+}
+
 .mainprofilepage {
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  .mainprofilebody{
-    width: 75%;
-  }
   // padding-left: 169px;
   .uppersection {
     .Welcome {
