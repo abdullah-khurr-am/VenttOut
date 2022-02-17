@@ -2,6 +2,28 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Project Details:
+
+The following website is a work in progress website for a Startup that focuses on providing an anonymous place for university students to rant and vent about their student life and its problems.
+
+It was designed in Figma and developed in React. It employed **CSS/SASS, HTML, Redux** as well as **ReactJS** libraries.
+It is being developed as close to the figma design as possible, down to the very pixel and made responsive to different screensizes
+
+The following are the views developed so far:
+
+### SignUp Page
+![Screenshot (285)](https://user-images.githubusercontent.com/44776526/154544350-d74b79aa-597a-4bc4-9773-72ae7d078505.png)
+
+### LoginPage Page
+![Screenshot (286)](https://user-images.githubusercontent.com/44776526/154544582-39d3167e-5caa-4870-ac17-d9508a3bba66.png)
+
+### NewsFeed Page
+![screenshot-localhost_3000-2022 02 17-23_14_55](https://user-images.githubusercontent.com/44776526/154545051-fe7c6e40-31e5-4970-bd40-2eb737c60ae8.png)
+
+### User DashBoard Page
+![screenshot-localhost_3000-2022 02 17-23_16_03](https://user-images.githubusercontent.com/44776526/154545171-97b77fc2-ea51-43c1-bad1-091e59b8d29a.png)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
